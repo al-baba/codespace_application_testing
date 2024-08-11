@@ -164,5 +164,6 @@ dependencies:
       - flask-restplus==0.13.0
       - itsdangerous==2.0.1
       - jinja2==3.0.3
+      - pytest
       - werkzeug==0.16.1
 prefix: /home/al_baba/miniconda3/envs/restVV_fork
