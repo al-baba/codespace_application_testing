@@ -23,6 +23,7 @@ pycosat @ file:///croot/pycosat_1714510623388/work
 pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
 pyOpenSSL @ file:///croot/pyopenssl_1708386183891/work
 PySocks @ file:///work/perseverance-python-buildout/croot/pysocks_1698845478203/work
+pytest 
 requests @ file:///croot/requests_1707355572290/work
 ruamel.yaml @ file:///work/perseverance-python-buildout/croot/ruamel.yaml_1698863605521/work
 setuptools==70.3.0
