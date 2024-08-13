@@ -22,7 +22,7 @@ pycosat==0.6.6
 pycparser==2.21
 pyOpenSSL==24.0.0
 PySocks==1.7.1
-python==3.8.18
+
 requests==2.31.0
 ruamel.yaml==0.17.21
 setuptools==70.3.0
