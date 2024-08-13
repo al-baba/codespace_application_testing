@@ -3,4 +3,9 @@
 
 
 # codespace_application_testing
-application within my personal 'ownership' for personal codespaces use. can fork from here.
+Application within my personal 'ownership' for personal codespaces use (organisations require fee). 
+
+
+
+## fork from here.
+Fork this repository and use free Codespaces allotment within your personal account. 
