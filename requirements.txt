@@ -17,7 +17,7 @@ jsonpointer==2.1
 packaging==23.2
 pip
 platformdirs==3.10.0
-pluggy==1.0.0
+pluggy>=1.5
 pycosat==0.6.6
 pycparser==2.21
 pyOpenSSL
