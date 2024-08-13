@@ -23,6 +23,8 @@ pycparser==2.21
 pyOpenSSL
 PySocks==1.7.1
 
+pytest-cov
+
 requests==2.31.0
 ruamel.yaml==0.17.21
 setuptools==70.3.0
