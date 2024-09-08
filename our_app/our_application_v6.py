@@ -2,6 +2,12 @@
 Simple rest interface for VariantVlidator built using Flask Flask-RESTPlus and Swagger UI
 """
 
+# TODO: create branches for main, test_and_develop and archive
+#   main can be bare bones application that works
+#   archive can be more complex app
+#   test_and_develop can seek to catch up with openvar version
+
+
 # Import modules
 from flask import Flask, make_response, request
 from flask_restplus import Api, Resource, reqparse, fields, abort
