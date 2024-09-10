@@ -1,4 +1,8 @@
 """
+Archive version of application for reference
+"""
+
+"""
 Simple rest interface for VariantVlidator built using Flask Flask-RESTPlus and Swagger UI
 """
 
