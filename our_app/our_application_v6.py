@@ -6,7 +6,7 @@ Very simple 'HelloClass' & 'NameClass' Application Programming Interface:
 
 # TODO: Get simple app running then testing.
 #   focus on dependencies, flask-restX
-#   could try using poetry init?
+#   could try using '$ poetry init' in a poetry_branch?
 #   develop can seek to catch up with openvar version of application
 
 
