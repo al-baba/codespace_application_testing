@@ -22,6 +22,16 @@ from dicttoxml import dicttoxml
 # so application is recommended
 application = Flask(__name__)
 
+
+print(f'Application type is {type(application)} with methods and properites [dir(application)]:')
+for i in dir(application):
+    if  i == "config":
+        print("We've got a config method: ", i)
+
+for j in dir(application.config):
+    print(j)
+
+
 # Define the API as api
 api = Api(app = application)
 
