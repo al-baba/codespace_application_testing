@@ -6,15 +6,13 @@ To write a test using pytest for a Flask application, you typically need to foll
 """
 
 import pytest
-from our_app import app    # import Flask app instance
+from basic_rest_API.app import application  # Import your Flask app    # import Flask app instance
 
 @pytest.fixture
 def client():
     application.config['TESTING'] = True    # enable test mode
     with application.test_client() as client:   # create test client
         yield client
-
-
 
 def test_application(client):
     repsonse = client.get('/')

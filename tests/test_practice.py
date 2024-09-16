@@ -1,6 +1,6 @@
 import pytest
 
-# from our_app import our_application_v6
+# from basic_rest_API import our_application_v6
 
 def estimate(kalamata):
   departure = kalamata + 20

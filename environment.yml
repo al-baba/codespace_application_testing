@@ -1,4 +1,4 @@
-name: our_app
+name: basic_rest_API
 channels:
   - conda-forge
   - bioconda
