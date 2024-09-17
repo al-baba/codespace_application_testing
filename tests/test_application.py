@@ -7,7 +7,7 @@ To write a test using pytest for a Flask application, you typically need to foll
 
 import pytest
 
-from basic_rest_API.app import application  # Import your Flask app    # import Flask app instance
+from basic_rest_API.app import application  # import Flask app instance
 
 
 @pytest.fixture
