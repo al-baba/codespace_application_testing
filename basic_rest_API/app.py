@@ -17,19 +17,21 @@ from dicttoxml import dicttoxml
 
 
 
+
+
 # Define the application as a Flask app with the name defined by __name__ (i.e. the name of the current module)
 # Most tutorials define application as "app", but I have had issues with this when it comes to deployment,
 # so application is recommended
 application = Flask(__name__)
 
 
-print(f'Application type is {type(application)} with methods and properites [dir(application)]:')
-for i in dir(application):
-    if  i == "config":
-        print("We've got a config method: ", i)
-
-for j in dir(application.config):
-    print(j)
+# print(f'Application type is {type(application)} with methods and properites [dir(application)]:')
+# for i in dir(application):
+#     if  i == "config":
+#         print("We've got a config method: ", i)
+#
+# for j in dir(application.config):
+#     print(j)
 
 
 # Define the API as api
