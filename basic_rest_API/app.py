@@ -4,10 +4,10 @@ Very simple 'HelloClass' & 'NameClass' Application Programming Interface:
         built using Flask Flask-RESTX and Swagger UI.
 """
 
-# TODO: create branches for main, test_and_develop and archive
-#   main can be bare bones application that works
-#   archive can be more complex app
-#   test_and_develop can seek to catch up with openvar version
+# TODO: Get simple app running then testing.
+#   focus on dependencies, flask-restX
+#   could try using '$ poetry init' in a poetry_branch?
+#   develop can seek to catch up with openvar version of application
 
 
 # Import modules
@@ -17,10 +17,22 @@ from dicttoxml import dicttoxml
 
 
 
+
+
 # Define the application as a Flask app with the name defined by __name__ (i.e. the name of the current module)
 # Most tutorials define application as "app", but I have had issues with this when it comes to deployment,
 # so application is recommended
 application = Flask(__name__)
+
+
+# print(f'Application type is {type(application)} with methods and properites [dir(application)]:')
+# for i in dir(application):
+#     if  i == "config":
+#         print("We've got a config method: ", i)
+#
+# for j in dir(application.config):
+#     print(j)
+
 
 # Define the API as api
 api = Api(app = application)
