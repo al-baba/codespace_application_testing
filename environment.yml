@@ -20,3 +20,4 @@ dependencies:
       - flask_httpauth==4.8.0
       - flask_limiter==3.5.1
       - pytest>=3.6
+      - pytest-cov
