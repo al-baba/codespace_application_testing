@@ -1,0 +1,8 @@
+#  New in version 6.0.
+# pyproject.toml are considered for configuration when they contain a tool.pytest.ini_options table.
+# https://docs.pytest.org/en/6.2.x/customize.html
+
+# hey pytest I want to show you where to find stuff I want to import
+[tool.pytest.ini_options]
+pythonpath = basic_rest_API    # source code is in basic_rest_API
+testpaths = tests    # tell pytest to look for our pytests in tests
