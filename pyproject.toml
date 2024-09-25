@@ -4,5 +4,5 @@
 
 # hey pytest I want to show you where to find stuff I want to import
 [tool.pytest.ini_options]
-pythonpath = [basic_rest_API]    # source code is in basic_rest_API
-testpaths = [tests]    # tell pytest to look for our pytests in tests
+pythonpath = ["basic_rest_API"]    # source code is in basic_rest_API
+testpaths = ["tests"]    # tell pytest to look for our pytests in tests
