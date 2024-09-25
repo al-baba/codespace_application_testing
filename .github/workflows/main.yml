@@ -25,12 +25,12 @@ jobs:
       - name: Run tests and collect coverage
         run: |
           
-          $CONDA/bin/pytest
-          $CONDA/bin/pytest --cov basic_rest_API ${{ env.CODECOV_ATS_TESTS }}
+         
+          $CONDA/bin/pytest --cov=basic_rest_API ${{ env.CODECOV_ATS_TESTS }}
       
       
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v4.5.0
         with:
           verbose: true
         env:
