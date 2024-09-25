@@ -4,10 +4,13 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
+    
       - name: Checkout
+        # Check out repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
@@ -24,13 +27,10 @@ jobs:
           $CONDA/bin/flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Run tests and collect coverage
         run: |
+          $CONDA/bin/pytest --cov=basic_rest_API --cov-report=xml ${{ env.CODECOV_ATS_TESTS }}
           
-          $CONDA/bin/pytest
-          $CONDA/bin/pytest --cov basic_rest_API ${{ env.CODECOV_ATS_TESTS }}
-      
-      - uses: actions/checkout@main
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v4.5.0
         with:
           verbose: true
         env:
