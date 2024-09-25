@@ -4,10 +4,13 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
+    
       - name: Checkout
+        # Check out repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
@@ -26,7 +29,7 @@ jobs:
         run: |
           
          
-          $CONDA/bin/pytest --cov=basic_rest_API ${{ env.CODECOV_ATS_TESTS }}
+          $CONDA/bin/pytest --cov basic_rest_API ${{ env.CODECOV_ATS_TESTS }}
       
       
       - name: Upload coverage to Codecov
