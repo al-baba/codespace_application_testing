@@ -27,11 +27,8 @@ jobs:
           $CONDA/bin/flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Run tests and collect coverage
         run: |
+          $CONDA/bin/pytest --cov=basic_rest_API --cov-report=xml ${{ env.CODECOV_ATS_TESTS }}
           
-         
-          $CONDA/bin/pytest --cov basic_rest_API ${{ env.CODECOV_ATS_TESTS }}
-      
-      
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4.5.0
         with:
