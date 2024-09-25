@@ -24,9 +24,11 @@ jobs:
           $CONDA/bin/flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Run tests and collect coverage
         run: |
-          conda install pytest
+          
           $CONDA/bin/pytest
           $CONDA/bin/pytest --cov basic_rest_API ${{ env.CODECOV_ATS_TESTS }}
+      
+      - uses: actions/checkout@main
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
