@@ -28,7 +28,7 @@ jobs:
           $CONDA/bin/pytest
           $CONDA/bin/pytest --cov basic_rest_API ${{ env.CODECOV_ATS_TESTS }}
       
-      - uses: actions/checkout@main
+      
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
