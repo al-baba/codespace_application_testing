@@ -22,11 +22,11 @@ def client():
 def test_application(client):
     response = client.get('/')
 
-    print("using debugging feature")
-    for i in dir(response):
-        print(i)
-    json_response = response.json
-    print(json_response)
-    # print(f'response.data is {response.json.keys()}')
+    # for i in dir(response):
+    #     print(i)
+
+    print(response.headers)
     assert response.status_code == 200
-    # assert response.data == b"Hello, World!"
+
+
+    # print(response.get_json())
