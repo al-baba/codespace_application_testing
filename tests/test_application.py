@@ -19,14 +19,18 @@ def client():
         yield client
 
 
-def test_application(client):
+def test_hello_endpoint(client):
     response = client.get('/')
 
-    # for i in dir(response):
-    #     print(i)
 
-    print(response.headers)
+
     assert response.status_code == 200
 
 
-    # print(response.get_json())
+def test_name_endpoint(client):
+    response = client.get('/name/Alejandro')
+    for i in dir(response):
+        print(i)
+    assert response.status_code == 200
+
+
