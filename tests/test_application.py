@@ -19,14 +19,18 @@ def client():
         yield client
 
 
-def test_application(client):
+def test_hello_endpoint(client):
     response = client.get('/')
 
-    print("using debugging feature")
+
+
+    assert response.status_code == 200
+
+
+def test_name_endpoint(client):
+    response = client.get('/name/Alejandro')
     for i in dir(response):
         print(i)
-    json_response = response.json
-    print(json_response)
-    # print(f'response.data is {response.json.keys()}')
     assert response.status_code == 200
-    # assert response.data == b"Hello, World!"
+
+
