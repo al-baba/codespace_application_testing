@@ -34,3 +34,6 @@ def test_name_endpoint(client):
     assert response.status_code == 200
 
 
+def test_args(client):
+    response = client.get('name/Ali?content-type=text%2xml')
+    assert response.status_code == 200
