@@ -20,20 +20,19 @@ def client():
 
 
 def test_hello_endpoint(client):
-    response = client.get('/')
-
-
-
-    assert response.status_code == 200
+    response_1 = client.get('/')
+    response_2 = client.get('/hello/')
+    response_3 = client.get('/hello/?content-type=text%2Fxml')
+    # 'http://127.0.0.1:5000/hello/?content-type=application%2Fjson'
+    assert response_1.status_code == 200
+    assert response_2.status_code == 200
+    assert response_3.status_code == 200
 
 
 def test_name_endpoint(client):
-    response = client.get('/name/Alejandro')
-    for i in dir(response):
-        print(i)
-    assert response.status_code == 200
+    response_1 = client.get('/name/Alejandro')
+    response_2 = client.get('/name/Ali?content-type=text%2xml')
+    assert response_1.status_code == 200
+    assert response_2.status_code == 200
 
 
-def test_args(client):
-    response = client.get('name/Ali?content-type=text%2xml')
-    assert response.status_code == 200
