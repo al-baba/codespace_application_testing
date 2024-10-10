@@ -63,7 +63,7 @@ class HelloClass(Resource):
 
         # Overides the default response route so that the standard HTML URL can return any specified format
         if args['content-type'] == 'application/json':
-            # example: http://127.0.0.1:5000/name/name/bob?content-type=application/json
+            # example: http://127.0.0.1:5000/hello/?content-type=application%2Fjson
             return json({
                 "greeting" : "Hello World"
             },
